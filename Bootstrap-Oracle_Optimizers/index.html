@@ -5,8 +5,725 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/91a6d2fe0f.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: auto;
+}
+#exclusive {
+    background-image: url(	https://d32baadbbpueqt.cloudfront.net/Homepage/027f3555-a5e3-44eb-99ad-1396391f6093.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 80px;
+    width:100% ;
+    height: 600px;
+}
+#exclusive>div>h6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    margin-bottom: 26px;
+    font-size: larger;
+    font-weight: bold;
+}
+.rd-border {
+    border: 2px solid rgb(252,66,138);
+    width: 50px;
+    margin: 10px;
+    border-bottom: none;
+}
+.box {
+    display:flex;
+    width: 100%;
+    padding: 0px 115px 0 165px;
+    grid-template-columns: repeat(4,1fr);
+}
+.card {
+    width: 100%;
+    display: grid;
+    /* height: 30rem; */
+    height: 100%;
+    justify-content: center;
+    align-items:center;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px; 
+}
+.card-img-top {
+   padding-top: 15px;
+   width: 13rem;
+   /* width: 75%; */
+   border-radius: 20px;
+   height: 13rem;
+   /* height: 75%; */
+   margin-inline: 3rem;
+}
+.fa-heart {
+    border: 2px solid;
+    /* padding: 13px; */
+    padding: .9rem;
+    border-radius: 15px;
+}
+.btn-primary {
+    /* width: 220px; */
+    width: 75%;
+    /* height: 45px; */
+    height: 100%;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.card-text {
+    font-size:15px;
+}
+.new {
+    border: 2px solid;
+    position: absolute;
+    background-color: rgb(92,213,82);
+    padding:3px 50px 3px 5px;
+    color: white;
+    border: none;
+    font-size: xx-small;
+    top: 15px;
+    left: 0px;
+}
+.samosa1 {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 15px;
+    left: 73px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(118,220,122);
+}
+.samosa2 {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 25px;
+    left: 73px;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(118,220,122);
+}
+.price {
+    background-color: black;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 90px;
+}
+.cvsm {
+    width: 30px;
+}
+#club>div>h6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    margin-bottom: 26px;
+    font-size: larger;
+    font-weight: bold;
+}
+#club > div:nth-of-type(2) {
+    background: url(https://media.sugarcosmetics.com/upload/app_install_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline:40px;
+    width:90% ;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+#club > div:nth-of-type(2) {
+    display:flex;
+    flex-wrap: wrap;
+    /* padding: 100px 50px 10px 90px; */
+    padding: 0% 10% 4% 10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#club > div:nth-of-type(2) > div> img {
+    width: 230px;
+    height: 100px;
+    position: relative;
+    top: 50%;
+    left: -10%;
+    border-top-left-radius:60px; 
+    border-bottom-left-radius:50px; 
+}
+#club > div:nth-of-type(2) > div> p {
+    color: white;
+    margin-top: 20px;
+    font-size: 40px;
+    /* margin-left: 200px; */
+    /* margin-left: 30%; */
+    margin-left: 15rem;
+}
+#makeup>div>h6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    margin-bottom: 46px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+#makeup {
+    background-image: url(	https://media.sugarcosmetics.com/upload/VTOBackgroungTexture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 80px;
+    width:100% ;
+    height: 700px;
+}
+/* @media(width<1250px) {
+    .box {
+    display:grid;
+    width: 100%;
+    padding:0% 10% 0% 10%;
+    grid-template-columns: repeat(auto-fill (minmax(2,1fr)));
+    background-color: red;
+}
+#exclusive {
+    width:100% ; 
+    height: auto;
+}
+.card {
+    width: 700%;
+    grid-template-columns: repeat(auto-fill minmax(2,1fr));
+} */
+
+
+</style>
+
 </head>
 <body>
-    
+    <!----------------------------------------------------------------------------Pradeep------------------------------------------------>
+    <section id="exclusive" class="title">
+        <div>
+            <h6 ><span class="rd-border"></span>EXCLUSIVE RANGE LAUNCH <span class="rd-border"></span></h6>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" >
+            <div class="carousel-indicators" style="margin-top: -100px; display: none;">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-4 box">
+                    <div class="col">
+                        <div class="card">
+                          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F599125845-01.jpg%3Fv%3D1711208074&w=256&q=75" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                            <p class="card-text">SUGAR Play Mega Hype Colour
+                              Changing Lip Oil
+                          </p>
+                              <h5 class="card-title fw-bold">  ₹599</h5>
+                              <div class="d-flex justify-content-center">
+                                  <p class="card-text price"><img src="./cvlogosm.png" alt="logo" class="cvsm">
+                                      PRICE</p><span>  ₹427</span>
+                              </div>
+                                  <div class="d-flex">
+                                      <div><i class="fa-regular fa-heart "></i></div>
+                                      <button class="btn btn-primary btn btn-dark"  type="submit ">ADD TO BAG</button>    
+                                  </div>
+                                  <div class="new">New</div><div class="samosa1"></div><div class="samosa2"></div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                        <div class="card">
+                          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2FParent-01.jpg%3Fv%3D1691768624&w=256&q=75" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                            <p class="card-text">SUGAR Play Power Drip Lip Gloss</p>
+                            <p class="card-text" style="color: grey;">6 shades</p>
+                              <h5 class="card-title fw-bold">  ₹399</h5>
+                           <p >
+                              <div class="d-flex justify-content-center"><p class="card-text price"><img src="./cvlogosm.png" alt="logo" class="cvsm">PRICE</p>
+                              <span>  ₹319</span></div>
+                           </p>
+                           <div class="d-flex">
+                           <div><i class="fa-regular fa-heart"></i></div>
+                           <button class="btn btn-primary btn btn-dark" type="submit">SELECT SHADE</button> 
+                           <div class="new">New</div><div class="samosa1"></div><div class="samosa2"></div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                        <div class="card">
+                          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F01_0d43e9a7-af34-4fb9-a43b-eda429d7139a.jpg%3Fv%3D1711208170&w=256&q=75" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                              <p class="card-text">SUGAR Play Smooth Operator Lip
+                                  Crayon</p>
+                              <p class="card-text" style="color: grey;">5 shades</p>
+                                <h5 class="card-title fw-bold">  ₹599</h5>
+                             <p>
+                              <div class="d-flex justify-content-center">
+                                  <p class="card-text price"><img src="./cvlogosm.png " alt="" class="cvsm">PRICE</p>
+                                  <span>  ₹479</span>
+                              </div>
+                             </p>
+                             <div class="d-flex">
+                             <div><i class="fa-regular fa-heart"></i></div>
+                             <button class="btn btn-primary btn btn-dark" type="submit">SELECT SHADE</button> 
+                             <div class="new">New</div><div class="samosa1"></div><div class="samosa2"></div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                        <div class="card">
+                          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F526522653-01.jpg%3Fv%3D1691768822&w=256&q=75" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                              <p class="card-text">SUGAR Play Vibe Check Liquid
+                                  Lipstick</p>
+                              <p class="card-text" style="color: grey;">4 shades</p>
+                                <h5 class="card-title fw-bold">  ₹499</h5>
+                             <p>
+                              <div class="d-flex justify-content-center"><p class="card-text price" ><img src="./cvlogosm.png" alt="" class="cvsm">PRICE</p>
+                              <span>  ₹399</span></div>
+                             </p>
+                             <div class="d-flex">
+                             <div><i class="fa-regular fa-heart"></i></div>
+                             <button class="btn btn-primary btn btn-dark" type="submit">SELECT SHADE</button> 
+                             <div class="new">New</div><div class="samosa1"></div><div class="samosa2"></div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                </div>
+            </div>  
+            <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-4 box">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F526522653-01.jpg%3Fv%3D1691768822&w=256&q=75" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text">SUGAR Play Vibe Check Liquid
+                                  Lipstick</p>
+                                <p class="card-text" style="color: grey;">4 shades</p>
+                                <h5 class="card-title fw-bold">  ₹499</h5>
+                                <p>
+                                    <div class="d-flex justify-content-center"><p class="card-text price" ><img src="./cvlogosm.png" alt="" class="cvsm">PRICE</p>
+                                <span>  ₹399</span></div>
+                                </p>
+                                <div class="d-flex">
+                                <div><i class="fa-regular fa-heart"></i></div>
+                                <button class="btn btn-primary btn btn-dark" type="submit">SELECT SHADE</button> 
+                                <div class="new">New</div><div class="samosa1"></div><div class="samosa2"></div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>    
+                <div class="col">
+                          <div class="card">
+                            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F01_45924703-8e57-4fc3-93a2-b07c06491d27.jpg%3Fv%3D1692719159&w=256&q=75" class="card-img-top" alt="logo">
+                            <div class="card-body text-center">
+                              <p class="card-text">SUGAR Play Main Character
+                                  SPF15+ Brightening Compact
+                            </p>
+                                <h5 class="card-title fw-bold">  ₹599</h5>
+                                <div class="d-flex justify-content-center">
+                                    <p class="card-text price"><img src="./cvlogosm.png" alt="logo" class="cvsm">
+                                        PRICE</p><span>  ₹479</span>
+                                </div>
+                                    <div class="d-flex">
+                                        <div><i class="fa-regular fa-heart "></i></div>
+                                        <button class="btn btn-primary btn btn-dark"  type="submit ">ADD TO BAG</button>    
+                                    </div>
+                                    <div class="new">New</div><div class="samosa1"></div><div class="samosa2"></div>
+                            </div>
+                          </div>
+                    </div>
+                <div class="col">
+                          <div class="card">
+                            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F526525769-01.jpg%3Fv%3D1691768679&w=256&q=75" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <p class="card-text">SUGAR Play High Key Chrome
+                                  Eyeshadow</p>
+                              <p class="card-text" style="color: grey;">3 shades</p>
+                                <h5 class="card-title fw-bold">  ₹499</h5>
+                             <p >
+                                <div class="d-flex justify-content-center"><p class="card-text price"><img src="./cvlogosm.png" alt="logo" class="cvsm">PRICE</p>
+                                <span>  ₹399</span></div>
+                             </p>
+                             <div class="d-flex">
+                             <div><i class="fa-regular fa-heart"></i></div>
+                             <button class="btn btn-primary btn btn-dark" type="submit">SELECT SHADE</button> 
+                             <div class="new">New</div><div class="samosa1"></div><div class="samosa2"></div>
+                            </div>
+                            </div>
+                          </div>
+                    </div>
+                <div class="col">
+                        <div class="card">
+                            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F530148597-01_0ff14f22-171a-4fcc-adc6-0e9fd3743420.jpg%3Fv%3D1692719138&w=256&q=75" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text">SUGAR Play Main Character
+                                  SPF15+ Mattifying Compact</p>
+                                <p class="card-text" style="color: grey;">5 shades</p>
+                                  <h5 class="card-title fw-bold">  ₹599</h5>
+                               <p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="card-text price"><img src="./cvlogosm.png " alt="logo" class="cvsm">PRICE</p>
+                                    <span>  ₹479</span>
+                                </div>
+                               </p>
+                               <div class="d-flex">
+                               <div><i class="fa-regular fa-heart"></i></div>
+                               <button class="btn btn-primary btn btn-dark" type="submit">ADD TO BAG</button> 
+                               <div class="new">New</div><div class="samosa1"></div><div class="samosa2"></div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually"><i class="fa-solid fa-arrow-left" style="padding:10px;border: 2px solid; border-radius: 50%; color: rgb(252,38,113); background-color: rgb(220, 216, 216); border: none;" ></i></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually"><i class="fa-solid fa-arrow-right" style="padding:10px;border: 2px solid; border-radius: 50%; color: rgb(252,38,113); background-color: rgb(220, 216, 216); border: none;" ></i></span>
+            </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="club">
+        <div>
+            <h6 ><span class="rd-border"></span>CLUB VELLVETTE <span class="rd-border"></span></h6>
+        </div>
+        <div>
+            <div>
+                <img src="./cvlogolg.png" alt="">
+            </div>
+            <div>
+                <p class="fw-bold">Buy @ ₹299 for 6 months</p>
+                <p>Save 20% EXTRA + FREE Shipping</p>
+                <p class="fs-2" style="color: rgb(252,39,121);"> JOIN NOW</p>
+            </div>
+          </div>
+         
+    </section>
+
+    <section id="makeup" class="title">
+        <div>
+            <h6 ><span class="rd-border"></span>MAKEUP KITS & COMBOS <span class="rd-border"></span></h6>
+        </div>
+        <div id="carouselExampleIndicators1" class="carousel slide" >
+            <div class="carousel-indicators" style="margin-top: -100px;display: none;">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-4 box">
+                    <div class="col">
+                        <div class="card">
+                          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F608325285-summer-makeup-kit-wbgkv.jpg%3Fv%3D1713800413&w=256&q=75" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                            <p class="card-text">SUGAR Makeup Kit
+                          </p>  
+                              <div class="d-flex" style="margin-left: 60px;">
+                                <h5 class="card-title fs-3 fw-bold">  ₹1799 </h5> <span>MRP</span><span class="text-decoration-line-through">₹2900</span>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                  <p class="card-text price"><img src="./cvlogosm.png" alt="logo" class="cvsm">
+                                      PRICE</p><span>  ₹1439</span>
+                              </div>
+                                  <div class="d-flex">
+                                      <div><i class="fa-regular fa-heart "></i></div>
+                                      <button class="btn btn-primary btn btn-dark"  type="submit ">CHOOSE ITEMS</button>    
+                                  </div>
+                          </div>
+                        </div>
+                        </div>
+                    <div class="col">
+                        <div class="card">
+                          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F615668847-mothers-day-kit-wbg-1.jpg%3Fv%3D1715355385&w=256&q=75" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                            <p class="card-text">Mom's Timeless Beauty Kit</p>
+                            <div class="d-flex" style="margin-left: 60px;">
+                                <h5 class="card-title fs-3 fw-bold">  ₹2499 </h5> <span>MRP</span><span class="text-decoration-line-through">₹4481</span>
+                              </div>
+                              <p>
+                              <div class="d-flex justify-content-center"><p class="card-text price"><img src="./cvlogosm.png" alt="logo" class="cvsm">PRICE</p>
+                              <span>  ₹1999</span></div>
+                           </p>
+                           <div class="d-flex">
+                           <div><i class="fa-regular fa-heart"></i></div>
+                           <button class="btn btn-primary btn btn-dark" type="submit">CHOOSE ITEMS</button> 
+                           <div class="new">New</div><div class="samosa1"></div><div class="samosa2"></div>
+                          </div>
+                          </div>
+                        </div>
+                        </div>
+                    <div class="col">
+                        <div class="card">
+                          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F537282461-maximeyes-mat-value-set-wbg3.jpg%3Fv%3D1694619990&w=256&q=75" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                              <p class="card-text">Lip Lash Makeup Set</p>
+                              <div class="d-flex" style="margin-left: 60px;">
+                                <h5 class="card-title fs-3 fw-bold">  ₹1099 </h5> <span>MRP</span><span class="text-decoration-line-through">₹1448</span>
+                              </div>
+                             <p>
+                              <div class="d-flex justify-content-center">
+                                  <p class="card-text price"><img src="./cvlogosm.png " alt="" class="cvsm">PRICE</p>
+                                  <span>  ₹879</span>
+                              </div>
+                               
+                             </p>
+                             <div class="d-flex">
+                             <div><i class="fa-regular fa-heart"></i></div>
+                             <button class="btn btn-primary btn btn-dark" type="submit">CHOOSE ITEMS</button> 
+                          </div>
+                          </div>
+                        </div>
+                        </div>
+                    <div class="col">
+                        <div class="card">
+                          <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F606497535-sugar-signature-makeup-kit_wbg_1080x1080_e256cdc2-7b6f-4d4e-b57b-ea6edc5efbc5.jpg%3Fv%3D1713195563&w=256&q=75" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                              <p class="card-text">SUGAR Signature Makeup Kit</p>
+                              <div class="d-flex" style="margin-left: 60px;">
+                                <h5 class="card-title fs-3 fw-bold">  ₹1399 </h5> <span>MRP</span><span class="text-decoration-line-through">₹1119</span>
+                              </div>
+                             <p>
+                              <div class="d-flex justify-content-center"><p class="card-text price" ><img src="./cvlogosm.png" alt="" class="cvsm">PRICE</p>
+                              <span>  ₹1119</span></div>
+                                
+                             </p>
+                             <div class="d-flex">
+                             <div><i class="fa-regular fa-heart"></i></div>
+                             <button class="btn btn-primary btn btn-dark" type="submit">CHOOSE ITEMS</button> 
+                          </div>
+                        </div>
+                      </div>
+                        </div>
+                </div>
+              </div>  
+            <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-4 box">
+                <div class="col">
+                        <div class="card">
+                            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F549928439-main-img.jpg%3Fv%3D1698248481&w=256&q=75" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                            <p class="card-text">Set Minimal Pout &Prime</p>
+                                <div class="d-flex" style="margin-left: 60px;">
+                                <h5 class="card-title fs-3 fw-bold">  ₹1368 </h5> <span>MRP</span><span class="text-decoration-line-through">₹1823</span>
+                                </div>
+                            <p>
+                            <div class="d-flex justify-content-center"><p class="card-text price" ><img src="./cvlogosm.png" alt="" class="cvsm">PRICE</p>
+                            <span>  ₹1094</span></div>
+                                
+                            </p>
+                            <div class="d-flex">
+                            <div><i class="fa-regular fa-heart"></i></div>
+                            <button class="btn btn-primary btn btn-dark" type="submit">CHOOSE ITEMS</button> 
+                            </div>
+                            </div>
+                        </div>
+                </div>      
+                <div class="col">
+                    <div class="card">
+                        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F01_45924703-8e57-4fc3-93a2-b07c06491d27.jpg%3Fv%3D1692719159&w=256&q=75" class="card-img-top" alt="logo">
+                        <div class="card-body text-center">
+                            <p class="card-text">Mousse Muse Lip Cream Set of 3
+                                + Free Lipstick Box
+                            </p>
+                            <div class="d-flex" style="margin-left: 60px;">
+                            <h5 class="card-title fs-3 fw-bold">  ₹1399 </h5> <span>MRP</span><span class="text-decoration-line-through">₹1802</span>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                            <p class="card-text price"><img src="./cvlogosm.png" alt="logo" class="cvsm">
+                                        PRICE</p><span>  ₹1119</span>
+                            </div>
+                                <div class="d-flex">
+                                    <div><i class="fa-regular fa-heart "></i></div>
+                                    <button class="btn btn-primary btn btn-dark"  type="submit ">CHOOSE ITEMS</button>    
+                                </div>      
+                            </div>
+                        </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_e4b6c948-178e-4bfe-a3b3-926119dea615.jpg%3Fv%3D1649865681&w=256&q=75" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-text">Set of 4 Kajal Set</p>
+                                <div class="d-flex" style="margin-left: 60px;">
+                                    <h5 class="card-title fs-3 fw-bold">  ₹799 </h5> <span>MRP</span><span class="text-decoration-line-through">₹996</span>
+                                </div>
+                            <p >
+                            <div class="d-flex justify-content-center"><p class="card-text price"><img src="./cvlogosm.png" alt="logo" class="cvsm">PRICE</p>
+                            <span>  ₹639</span></div>
+                                
+                            </p>
+                            <div class="d-flex">
+                                <div><i class="fa-regular fa-heart"></i></div>
+                                <button class="btn btn-primary btn btn-dark" type="submit">ADD TO BAG</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FWBG1_73e85cb4-80d8-4eeb-ba32-deaf11c4483f.jpg%3Fv%3D1658851292&w=256&q=75" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-text">Blushin' & Poppin' Value Set</p>
+                                <div class="d-flex" style="margin-left: 60px;">
+                                <h5 class="card-title fs-3 fw-bold">  ₹1149 </h5> <span>MRP</span><span class="text-decoration-line-through">₹1298</span>
+                                </div>
+                            <p>
+                            <div class="d-flex justify-content-center">
+                                <p class="card-text price"><img src="./cvlogosm.png " alt="logo" class="cvsm">PRICE</p>
+                                <span>  ₹919</span>
+                            </div>  
+                            </p>
+                            <div class="d-flex">
+                            <div><i class="fa-regular fa-heart"></i></div>
+                            <button class="btn btn-primary btn btn-dark" type="submit">CHOOSE ITEMS</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-4 box">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F603644671-1st-card.jpg%3Fv%3D1712590773&w=256&q=75" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text">Festive Makeup Kit</p>
+                                    <div class="d-flex" style="margin-left: 60px;">
+                                      <h5 class="card-title fs-3 fw-bold">  ₹1699 </h5> <span>MRP</span><span class="text-decoration-line-through">₹2346</span>
+                                    </div>
+                                <p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="card-text price"><img src="./cvlogosm.png " alt="logo" class="cvsm">PRICE</p>
+                                    <span>  ₹1359</span>
+                                </div>
+                                   
+                                </p>
+                            <div class="d-flex">
+                                <div><i class="fa-regular fa-heart"></i></div>
+                                <button class="btn btn-primary btn btn-dark" type="submit">CHOOSE ITEMS</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col">
+                    <div class="card">
+                        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F615668847-mothers-day-kit-wbg-1.jpg%3Fv%3D1715355385&w=256&q=75" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text">Festive Makeup Kit Liplop</p>
+                                    <div class="d-flex" style="margin-left: 60px;">
+                                      <h5 class="card-title fs-3 fw-bold">  ₹1899 </h5> <span>MRP</span><span class="text-decoration-line-through">₹2646</span>
+                                    </div>
+                                <p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="card-text price"><img src="./cvlogosm.png " alt="logo" class="cvsm">PRICE</p>
+                                    <span>  ₹1259</span>
+                                </div>
+                                   
+                                </p>
+                            <div class="d-flex">
+                                <div><i class="fa-regular fa-heart"></i></div>
+                                <button class="btn btn-primary btn btn-dark" type="submit">CHOOSE ITEMS</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col">
+                    <div class="card">
+                        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FWBG1_73e85cb4-80d8-4eeb-ba32-deaf11c4483f.jpg%3Fv%3D1658851292&w=256&q=75" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text">Festive Makeup Kit Glass Skin</p>
+                                    <div class="d-flex" style="margin-left: 60px;">
+                                      <h5 class="card-title fs-3 fw-bold">  ₹1999 </h5> <span>MRP</span><span class="text-decoration-line-through">₹2446</span>
+                                    </div>
+                                <p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="card-text price"><img src="./cvlogosm.png " alt="logo" class="cvsm">PRICE</p>
+                                    <span>  ₹1259</span>
+                                </div>
+                                   
+                                </p>
+                            <div class="d-flex">
+                                <div><i class="fa-regular fa-heart"></i></div>
+                                <button class="btn btn-primary btn btn-dark" type="submit">CHOOSE ITEMS</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col">
+                    <div class="card">
+                        <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2F606497535-sugar-signature-makeup-kit_wbg_1080x1080_e256cdc2-7b6f-4d4e-b57b-ea6edc5efbc5.jpg%3Fv%3D1713195563&w=256&q=75" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text">Festive Makeup Kit Korean Eye Liner</p>
+                                    <div class="d-flex" style="margin-left: 60px;">
+                                      <h5 class="card-title fs-3 fw-bold">  ₹2699 </h5> <span>MRP</span><span class="text-decoration-line-through">₹3346</span>
+                                    </div>
+                                <p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="card-text price"><img src="./cvlogosm.png " alt="logo" class="cvsm">PRICE</p>
+                                    <span>  ₹1859</span>
+                                </div>
+                                   
+                                </p>
+                            <div class="d-flex">
+                                <div><i class="fa-regular fa-heart"></i></div>
+                                <button class="btn btn-primary btn btn-dark" type="submit">CHOOSE ITEMS</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+              </div>
+            </div>     
+           
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually"><i class="fa-solid fa-arrow-left" style="padding:10px;border: 2px solid; border-radius: 50%; color: rgb(252,38,113); background-color: rgb(220, 216, 216); border: none;" ></i></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next" >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually"><i class="fa-solid fa-arrow-right" style="padding:10px;border: 2px solid; border-radius: 50%; color: rgb(252,38,113); background-color: rgb(220, 216, 216); border: none;" ></i></span>
+            </button>
+           
+            </div>
+        </div>
+
+          
+    </section>
+
+
+    <!----------------------------------------------------------------------------Pradeep------------------------------------------------>
 </body>
-</html>
+</html
