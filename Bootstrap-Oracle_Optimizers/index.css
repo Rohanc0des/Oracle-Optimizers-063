@@ -557,7 +557,7 @@ color: rgb(90,102,106);
     width: 33%;
     height: 100%;
     border-radius: 50px;
- origin/pradeep_ft34_271_day4
+
 }
 
 
@@ -618,7 +618,7 @@ hr {
 }
 
 
-.card-img-top{
+.card-img-top-1{
     width: 485px;
     height: 300px;
     border-radius: 20px;
@@ -646,5 +646,12 @@ hr {
     width: 100%;
     height: auto;
    display: flex;
+   gap: 20px;
    justify-content: center;
+   flex-wrap: wrap;
+}
+.px-md-3 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    
 }
