@@ -120,6 +120,7 @@ div.footer-1 > div:nth-of-type(2) {
   border: 1px solid #FFFFFF;
   opacity: 0px;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -128,13 +129,13 @@ div.footer-1 > div:nth-of-type(2) {
   height: 390px;
   padding-top: 41px;
   padding-left: 300px;
-  gap: 0px;
+  gap: 20px;
   opacity: 0px;
 }
 
 div.column-1 > p {
   font-family: Inter;
-  font-size: 27.41px;
+  font-size: 17.41px;
   font-weight: 400;
   line-height: 28.13px;
   text-align: left;
@@ -281,4 +282,19 @@ div.input-with-button > input {
 
 button {
   border: #E7E6E6;
+}
+
+.footer1 {
+  background-image: url("https://s3-alpha-sig.figma.com/img/d40a/f01e/0882cbce65b5727e76795a6c36d2a68d?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aBJWKqNRKqGSnm-F8jWbsE0CSrzduOpD~0V7DNEA8H2-EB3yga6yLs~I4HkX9~kmJGsc4yf4pGbtYvP7w7DlkI9yjq5c6115ibnj842Im8mAeH3oY837l~dzmEEu9jOTQmUuJGI0gtRGSm-m6n1u6GrXxpyLBwHqWYITa-KNf8y2bva0UP1Btgd5SuDlu4yCfgzG3-1RRxVWl6ZoQfWEQiycBZT6o84zlLaA7fmSkmeXz2bEU1Zo6TLPjSqeg~LrJhDnd7LTJoOUH4d2Va5tgnzL5tFkOSvVZkcqryh-nDQkOTDJ1GDijRBjbxr2u5s45aj4d-Gq52TwN1a-BwicDQ__");
+  width: 1920px;
+  height: 498.13px;
+  top: 6885.08px;
+  position: absolute;
+}
+
+.box {
+  width: 30%;
+  height: 70%;
+  margin-left: 300px;
+  margin-top: 120px;
 }/*# sourceMappingURL=styles.css.map */
