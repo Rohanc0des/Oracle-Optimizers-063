@@ -1,0 +1,270 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#sec1 > img {
+  width: 1920px;
+  height: 711.25px;
+  position: relative;
+  top: 4650.22px;
+}
+
+#sec1 > section {
+  width: 700.73px;
+  position: absolute;
+  height: 261.25px;
+  top: 4900.22px;
+  left: 609.63px;
+}
+#sec1 > section h2 {
+  width: 670.93px;
+  position: absolute;
+  height: 90px;
+  top: 10px;
+  left: 15px;
+  font-family: Inter;
+  font-size: 69.45px;
+  font-weight: 700;
+  line-height: 105px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#sec1 > section p {
+  width: 395.05px;
+  height: 48.12px;
+  position: relative;
+  margin-top: 14px;
+  top: 110px;
+  left: 152.93px;
+  font-family: Inter;
+  font-size: 14.53px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#sec1 > section div {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 190.25px;
+  left: 320.35px;
+  margin-top: 34px;
+  color: #FFFFFF;
+  border: 2px solid;
+  border-radius: 50%;
+}
+#sec1 > section div .fa-play {
+  width: 17.27px;
+  position: absolute;
+  height: 20px;
+  top: 20px;
+  left: 23.36px;
+}
+
+section#sec2 {
+  width: 1920px;
+  height: 773.63px;
+  position: absolute;
+  top: 5361.47px;
+  padding: 120px 300px 105px 300px;
+  background-color: rgba(235, 102, 43, 0.07);
+}
+
+.container {
+  width: 1320px;
+  height: 548.63px;
+  position: absolute;
+  top: 120px;
+  left: 300px;
+}
+.container h2 {
+  width: 440.95px;
+  height: 45px;
+  position: absolute;
+  left: 15px;
+  font-family: Inter;
+  font-size: 29.77px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+}
+.container .card {
+  display: flex;
+  margin-top: 85px;
+  margin-inline: 15px;
+  gap: 30px;
+}
+.container .card .cardbox {
+  width: 409.98px;
+  height: 315.5px;
+  top: 85px;
+  left: 15px;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+}
+.container .card .cardbox h4 {
+  width: 96.61px;
+  height: 27px;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family: Inter;
+  font-size: 17.86px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+}
+.container .card .cardbox p {
+  width: 346.23px;
+  height: 104.37px;
+  margin-top: 26px;
+  margin-left: 30px;
+  font-family: Inter;
+  font-size: 14.77px;
+  font-weight: 500;
+  line-height: 28.13px;
+  text-align: left;
+  color: rgb(5, 7, 60);
+}
+.container .card .cardbox div {
+  display: flex;
+}
+.container .card .cardbox div div > img {
+  width: 60px;
+  height: 60px;
+  margin-top: 20.5px;
+  margin-left: 30px;
+}
+.container .card .cardbox div .profile {
+  display: grid;
+  position: relative;
+  left: 15px;
+  top: 25px;
+  width: 300px;
+  height: 50px;
+}
+.container .card .cardbox div .profile span {
+  font-weight: 500;
+}
+.container .card2 {
+  display: flex;
+  width: 1320.98px;
+  height: 108.13px;
+  top: 440.5px;
+  padding: 15px 45.44px 15px 0px;
+}
+.container .card2 .cardbox2 {
+  width: 439.98px;
+  height: 108.13px;
+  top: 440.5px;
+  padding: 15px 45.44px 15px 15px;
+}
+.container .card2 .cardbox2 h4 {
+  width: 200.39px;
+  height: 45px;
+  top: 15px;
+  left: 15px;
+  font-family: Inter;
+  font-size: 28.13px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  color: rgb(5, 7, 60);
+}
+.container .card2 .cardbox2 p {
+  width: 380px;
+  height: 28.13px;
+  font-family: Inter;
+  font-size: 14.53px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-align: left;
+  color: rgb(5, 7, 60);
+}
+
+#sec3 {
+  width: 1320px;
+  height: 550.98px;
+  position: absolute;
+  top: 6250.09px;
+  left: 300px;
+  margin-top: 114px;
+  margin-bottom: 105px;
+}
+#sec3 h2 {
+  width: 210.5px;
+  height: 45px;
+  position: relative;
+  top: 5px;
+  left: 15px;
+  font-family: Inter;
+  font-size: 29.65px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  color: rgb(5, 7, 60);
+}
+#sec3 a {
+  width: 44.79px;
+  height: 28.13px;
+  position: absolute;
+  top: 21.88px;
+  left: 1234.41px;
+  font-family: Inter;
+  font-size: 14.3px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-align: left;
+  color: rgb(5, 7, 60);
+}
+#sec3 .card3 {
+  display: flex;
+  margin-top: 95px;
+  margin-left: 15px;
+  gap: 30px;
+}
+#sec3 .trip {
+  border: 2px solid;
+  width: 45.37px;
+  position: absolute;
+  height: 30px;
+  top: 160px;
+  left: 30px;
+  font-family: Inter;
+  font-size: 13.56px;
+  font-weight: 500;
+  line-height: 26.25px;
+  text-align: left;
+  color: rgb(5, 7, 60);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+}
+#sec3 .datename {
+  width: 250.45px;
+  height: 18px;
+  position: absolute;
+  top: 460.89px;
+  left: 15px;
+  font-family: Inter;
+  font-size: 13.89px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: left;
+}
+#sec3 .cardbox3 > p {
+  width: 366.92px;
+  height: 51px;
+  position: absolute;
+  top: 481.99px;
+  left: 15px;
+  font-family: Inter;
+  font-size: 17.3px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: rgb(5, 7, 60);
+}/*# sourceMappingURL=styles.css.map */
