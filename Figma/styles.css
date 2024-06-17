@@ -66,3 +66,214 @@
   opacity: 0.5px;
   position: absolute;
 }/*# sourceMappingURL=styles.css.map */
+
+
+
+/*Mahesh Arya ft33_246 */
+footer{
+  width: 1920px;
+height: 725.25px;
+top: 7383.2px;
+position: absolute;
+gap: 0px;
+opacity: 0px;
+background-color:  #05073C;
+display: flex;
+flex-direction: column;
+color: #ffff;
+font-family: Inter;
+
+}
+.footer-1{
+  width: 1290px;
+height: 185.13px;
+margin-left: 315px;
+margin-right: 315px;
+gap: 0px;
+
+opacity: 0px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+div.footer-1>div:nth-of-type(1){
+  padding-left: 80px;
+   padding-top: 50px; 
+  font-family: Inter;
+font-size: 19.69px;
+font-weight: 500;
+line-height: 37.5px;
+
+color: #ffff;
+}
+div.footer-1>div:nth-of-type(2){
+  font-family: Inter;
+font-size: 16.2px;
+font-weight: 500;
+line-height: 31.88px;
+text-align: left;
+padding-right: 169px;
+padding-top: 50px;
+}
+#footer-2{
+  width: 1920px;
+height: 471px;
+
+top: 185.12px;
+
+gap: 30px;
+border: 1px solid #FFFFFF;
+opacity: 0px;
+display: flex;
+justify-content: center;
+
+}
+.column-1{
+  width: 439.98px;
+height: 390px;
+padding-top: 41px;
+padding-left: 300px;
+gap: 0px;
+opacity: 0px;
+
+}
+div.column-1>p{
+  font-family: Inter;
+font-size: 14.41px;
+font-weight: 400;
+line-height: 28.13px;
+text-align: left;
+
+}
+.column-2{
+  width: 128.23px;
+height: 390px;
+padding-top: 41px;
+margin-left: 100px;
+gap: 0px;
+opacity: 0px;
+
+}
+div.column-2{
+  text-align: center;
+}
+div.column-2>ul{
+  list-style: none;
+
+ margin-top: 29px;
+ font-family: Inter;
+font-size: 14.65px;
+font-weight: 500;
+line-height: 28.13px;
+text-align: left;
+
+}
+.column-3{
+  width: 119.59px;
+height: 390px;
+padding-top: 41px;
+padding-left: 100px;
+gap: 0px;
+opacity: 0px;
+
+}
+div.column-3{
+  text-align: center;
+
+}
+div.column-3>ul{
+  list-style: none;
+
+ margin-top: 29px;
+ font-family: Inter;
+font-size: 14.65px;
+font-weight: 500;
+line-height: 28.13px;
+text-align: left;
+
+}
+.column-4{
+  width: 330px;
+height: 390px;
+padding-top: 41px;
+text-align: center;
+padding-right: 300px;
+
+padding-left: 100px;
+}
+div.column-4>div>ul{
+  list-style:none;
+
+margin-top: 10px;
+ font-family: Inter;
+font-size: 14.65px;
+font-weight: 500;
+line-height: 28.13px;
+text-align: center;
+
+}
+
+div.column-4>ul>li{
+  list-style-type: none;
+  list-style: none;
+}
+.copyright{
+  width: auto;
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+ align-items: center;
+ align-content: center;
+ color: #ffffff;
+}
+#ft-246{
+  background: #05073C;
+
+}
+#copy-t{
+  padding-left: 300px;
+  font-family: Inter;
+font-size: 14.53px;
+font-weight: 400;
+line-height: 28.13px;
+text-align: center;
+
+
+}
+.img-log{
+  padding-right: 300px;
+  display: flex;
+  gap:0px;
+  
+}
+
+.input-with-button{
+  width: 300px;
+height: 60px;
+top: 136.25px;
+left: 15px;
+display: flex;
+align-items: center;
+padding-left: 20px;
+gap: 0px;
+border-radius: 12px ;
+border: 1px solid #E7E6E6;
+opacity: 0px;
+background-color:  #FFFFFF;
+;
+
+}
+
+div.input-with-button>input{
+  width: 224px;
+}
+button{
+  border: #E7E6E6;
+
+}
+
+
+
