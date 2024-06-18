@@ -12,6 +12,7 @@ Frontend
 
 ## Deplolyed App
 Frontend: https://6670a174559a9b46d79475a8--courageous-blini-3aebfd.netlify.app/
+
 Frontend: https://6670a0518f34af4d5b4cae65--transcendent-dodol-eb7004.netlify.app/
 
 
